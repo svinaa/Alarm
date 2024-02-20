@@ -1,0 +1,33 @@
+﻿<Window x:Class="KamenNuzkyPapirWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KamenNuzkyPapirWPF"
+        mc:Ignorable="d"
+        Title="Kámen, nůžky, papír!" Height="450" Width="800"
+        Background="DarkOliveGreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnKamen" Content="Kámen" Grid.Row="2" VerticalAlignment="Bottom" Grid.Column="0" Height="70" Margin="10,0,0,0" Click="btnKamen_Click"/>
+        <Button x:Name="btnNuzky" Content="Nůžky" Grid.Row="2" VerticalAlignment="Bottom" Grid.Column="2" Height="70" Click="btnNuzky_Click" />
+        <Button x:Name="btnPapir" Content="Papír" Grid.Row="2" VerticalAlignment="Bottom" Grid.Column="4" Height="70" Margin="0,0,10,0" Click="btnPapir_Click"/>
+        <TextBox x:Name="txtBoxCPU" Text="CPU" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Stretch" FontSize="20"/>
+        <TextBox x:Name="TxtBoxPlayer" Text="Hráč" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Stretch" FontSize="36"/>
+        <Label Content="CPU" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30" Foreground="White" />
+        <Label Content="Hráč" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30" Foreground="White" />
+
+    </Grid>
+</Window>
